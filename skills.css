@@ -1,0 +1,112 @@
+#homefooter #iconset{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    right: 45px;
+    bottom: 3%;
+    z-index: 100;
+}
+
+#scroll{
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.span{
+    opacity: 0.6;
+    font-weight: 500;
+}
+
+.text {
+    font-size: 25px;
+    letter-spacing: 3px;
+    /* opacity: 0.4; */
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    /* border-right: 3px solid; */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+.text1 {
+    animation: typing 2s steps(25) 2.5s forwards, cursor .8s step-end infinite;
+}
+
+.text2 {
+    animation: typing 2s steps(45) 4.5s forwards, cursor .8s step-end infinite;
+}
+
+.text3 {
+    animation: typing 5s steps(60) 6.5s forwards, cursor .8s step-end infinite;
+}
+
+.text4{
+    animation: typing 5s steps(60) 10.5s forwards, cursor .8s step-end infinite;
+}
+
+.text5 {
+    animation: typing 5s steps(50) 15s forwards, cursor .8s step-end infinite;
+}
+
+.text6 {
+    animation: typing 5s steps(50) 20s forwards, cursor .8s step-end infinite;
+}
+
+.text7 {
+    animation: typing 5s steps(50) 22s forwards, cursor .8s step-end infinite;
+}
+
+.text8 {
+    animation: typing 5s steps(50) 24s forwards, cursor .8s step-end infinite;
+}
+
+.text9 {
+    animation: typing 5s steps(50) 26s forwards, cursor .8s step-end infinite;
+}
+
+.text10 {
+    animation: typing 5s steps(50) 28s forwards, cursor .8s step-end infinite;
+}
+
+.text11 {
+    animation: typing 5s steps(50) 29s forwards, cursor .8s step-end infinite;
+}
+
+.text12 {
+    animation: typing 5s steps(55) 31s forwards, cursor .8s step-end infinite;
+}
+
+.text13 {
+    animation: typing 5s steps(50) 33s forwards, cursor .8s step-end infinite;
+}
+
+.text14 {
+    animation: typing 5s steps(50) 35s forwards, cursor .8s step-end infinite;
+}
+
+.text15 {
+    animation: typing 5s steps(50) 37s forwards, cursor .8s step-end infinite;
+}
+
+.text16 {
+    animation: typing 5s steps(50) 38.5s forwards, cursor .8s step-end infinite;
+}
+
+.text17 {
+    animation: typing 5s steps(50) 39.5s forwards, cursor .8s step-end infinite;
+}
