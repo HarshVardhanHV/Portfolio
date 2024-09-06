@@ -65,7 +65,7 @@ firstPageAni();
 document.querySelectorAll(".elem").forEach(function(elem) {
 
     elem.addEventListener("mouseleave", function (details) {
-        gsap.to(elem.querySelector("video"), {
+        gsap.to(elem.querySelector("img"), {
             opacity: 0,
             ease: Power3,
             duration: 0.5,
@@ -91,7 +91,7 @@ document.querySelectorAll(".elem").forEach(function(elem) {
     });
 
     elem.addEventListener("mouseenter", function () {
-        gsap.to(elem.querySelector("video"), {
+        gsap.to(elem.querySelector("img"), {
             opacity: 1,
             ease: Power3.easeOut,
             duration: 0.5,
@@ -101,7 +101,7 @@ document.querySelectorAll(".elem").forEach(function(elem) {
     elem.addEventListener("mousemove", function (details) {
         var diff = details.clientY - elem.getBoundingClientRect().top;
 
-        gsap.to(elem.querySelector("video"), {
+        gsap.to(elem.querySelector("img"), {
             opacity: 1,
             ease: Power3,
             top: diff,
@@ -318,18 +318,20 @@ function handleVideoOpacity() {
     elements.forEach(function(element) {
         element.addEventListener("mousemove", function() {
             // document.querySelector("#minicircle").style.background = "grey";
-            document.querySelector("#minicircle").style.mixBlendMode = "soft-light"; //soft-light
-            document.querySelector("#minicircle").style.width = "70px";
-            document.querySelector("#minicircle").style.height = "70px";
-            document.querySelector("#minicircle").style.margin = "-40px";
-            document.querySelector("#minicircle").style.paddingLeft = "20px";
-            document.querySelector("#minicircle").style.paddingTop = "22px";
+            document.querySelector("#minicircle").style.mixBlendMode = "initial"; //soft-light
+            document.querySelector("#minicircle").style.opacity = "0.4";
+            document.querySelector("#minicircle").style.width = "100px";
+            document.querySelector("#minicircle").style.height = "100px";
+            document.querySelector("#minicircle").style.margin = "-53px";
+            document.querySelector("#minicircle").style.paddingLeft = "35px";
+            document.querySelector("#minicircle").style.paddingTop = "37px";
             document.querySelector("#minicircle").style.color = "black";
         })
 
         element.addEventListener("mouseleave", function() {
             // document.querySelector("#minicircle").style.background = "white";
             document.querySelector("#minicircle").style.mixBlendMode = "difference";
+            document.querySelector("#minicircle").style.opacity = "1";
             document.querySelector("#minicircle").style.width = "10px";
             document.querySelector("#minicircle").style.height = "10px";
             document.querySelector("#minicircle").style.margin = "-5px";

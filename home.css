@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "General Sans";
+    background-color: black;
 }
 
 html,body{
@@ -168,6 +169,8 @@ html,body{
 }
 
 #homefooter .ri-arrow-down-line{
+    background-color: #888;
+    border-radius: 50%;
     color: black;
     font-weight: 900;
 }
@@ -183,6 +186,8 @@ html,body{
 }
 
 #second h2{
+    /* background-color: white; */
+    width: fit-content;
     margin-bottom: 3vh;
     color: white;
     text-transform: uppercase;
@@ -221,17 +226,17 @@ html,body{
 
 .elem i{
     font-size: 40px;
-    opacity: .7;
+    opacity: .4;
 }
 
-.elem video{
-    margin-top: -130px;
-    margin-left: -265px;
+.elem img{
+    margin-top: -220px;
+    margin-left: -260px;
     /* display: none; */
     pointer-events: none;
     opacity: 0;
     /* width: 150%; */
-    height: 150%;
+    height: 250%;
     z-index: 999;
     position: absolute;
 }
@@ -281,6 +286,7 @@ html,body{
 
 #txtabout p{
     /* font-family: "General Sans Medium"; */
+    /* background-color: #fff; */
     letter-spacing: 2px;
     line-height: 1.5;
     margin-bottom: 30px;

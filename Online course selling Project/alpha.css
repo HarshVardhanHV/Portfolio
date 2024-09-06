@@ -1,0 +1,91 @@
+#detail{
+    display: flex;
+    height: 100%;
+}
+
+.batchd{
+    width: 50%;
+    /* background-color: aqua; */
+}
+
+.batchd h3{
+    margin-top: 70px;
+    margin-left: 50px;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.batchdtxt{
+    width: 50%;
+    /* background-color: aquamarine; */
+}
+
+.batchabg{
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 500px;
+    height: 310px;
+    border: 0px;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0);
+}
+
+.paybox{
+    margin: 100px;
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.pd{
+    margin-left: 10px;
+    font-weight: 600;
+    color: rgb(40, 86, 158);
+}
+
+.paydetail{
+    display: flex;
+    margin-top: 30px;
+}
+
+.paydetailtxt1{
+    width: 50px;
+    margin-bottom: 30px;
+    font-size: 10px;
+}
+
+.search1{
+    margin-bottom: 22px;
+    margin-left: 80px;
+}
+
+.search1 input:focus{
+    outline: none;
+}
+
+.price{
+    display: flex;
+    height: 40px;
+    margin: 20px -20px -20px -20px;
+    background-color: rgb(233, 233, 233);
+}
+
+.price img{
+    padding-top: 15px;
+    padding-left: 10px;
+    width: 151px;
+    height: 10px;
+}
+
+.pricebox a{
+    display: flex;
+    width: 170px;
+    height: 40px;
+    margin-left: 20px;
+    background-color: rgb(57, 108, 190);
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}

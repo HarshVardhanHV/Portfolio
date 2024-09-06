@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="Nav.css">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" href="Cart.css">
+</head>
+<body>
+    <header>
+        <section id="head">
+            <a href="#"><img src="Images/Home/logo.png" width="70px" alt=""></a>   
+            <div id="nav">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Course.html">Course</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a class="active" title="CART" href="Cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                </ul>
+            </div>
+            <div id="mobile">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="cart" class="section">
+            <table width="100%">
+                <thead>
+                    <tr>
+                      <td>Remove</td>
+                      <td>Batch</td>
+                      <td>Price</td>
+                      <td>Quantity</td>
+                      <td>Subtotal</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                        <td>ALPHA</td>
+                        <td>$49.99</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$49.99</td>
+                    </tr>
+                    <tr>
+                        <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                        <td>DELTA</td>
+                        <td>$79.99</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$79.99</td>
+                    </tr>
+                    <tr>
+                        <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                        <td>SIGMA</td>
+                        <td>$59.99</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$59.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="cartadd" class="section">
+            <div id="coupon">
+                <h3>Apply Coupon</h3>
+                <div>
+                    <input type="text" placeholder="Enter your Coupon">
+                    <button class="normal">Apply</button>
+                </div>
+            </div>
+            <div id="subtotal">
+                <h3>Cart Total</h3>
+                <table>
+                    <tr>
+                        <td>Cart Subtotal</td>
+                        <td>$ 189.97</td>
+                    </tr>
+                    <tr>
+                        <td>Applied coupon</td>
+                        <td>$ 9.98</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>$ 179.99</strong></td>
+                    </tr>
+                </table>
+                <button>Proceed</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <section id="footer">
+            <div class="foot">
+                <a href="#"><img src="Images/Home/logo.png" alt=""></a>
+            </div>
+            <div class="footf"><h4>CONNECT WITH US</h4>
+                <ul>
+                    <li><a href="#">Youtube<i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#">Linkedin<i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#">Instagram<i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#">Facebook<i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#">Telegram<i class="fa-brands fa-telegram"></i></a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
