@@ -1,29 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAR.io</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.css"></script>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="loco.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="home.css">
 </head>
+
 <body>
-    <div class="gamecontent">
-        <div class="ground groundani"></div>
-        <div class="cloud cloudani"></div>
-        <div class="mountain mountainani"></div>
-        <div class="gameover"><img src="Play Again!/Play_-removebg.png" alt="">
-            <button><a href="play.html"><img src="Play Again!/letPlay_-removebg.png" alt=""></a></button>
+    <div id="minicircle">view</div>
+    <div id="main">
+        <div id="home">
+            <div id="header">
+                <div id="nav">
+                    <a href="index.html">Harsh Vardhan</a>
+                    <h5 id="menu-toggle">Menu +</h5>
+                    <div id="nav-items">
+                        <a href="skills.html" class="nav-item">Skills</a>
+                        <a href="projects.html" class="nav-item">Projects</a>
+                        <!-- <a href="#me" class="nav-item">About</a> -->
+                        <a href="mailto:harshvardhan96643@gmail.com" class="nav-item">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div id="heading">
+                <div class="bounding">
+                    <h1 class="bound">SOFTWARE</h1>
+                </div>
+                <div class="blocktxt">
+                    <div class="bounding">
+                        <h1 class="bound" id="secondh1">ENGINEER</h1>
+                    </div>
+                    <div class="bounding">
+                        <!-- <h5 class="bound">Based in India</h5> -->
+                    </div>
+                </div>
+            </div>
+            <div id="smallheadings">
+                <!-- <img src="" alt=""> -->
+            </div>
+            <div id="homefooter">
+                <a href="images/My Resume.pdf" target="_blank">My Resume <i class="ri-arrow-right-up-line"></i></a>
+                <div id="iconset">
+                    <div class="circle"><i class="ri-arrow-down-line"></i></div>
+                    <div class="circle"><i class="ri-arrow-down-line"></i></div>
+                </div>
+            </div>
         </div>
-        <!-- <button onclick="window.location.reload()">Reload</button> -->
-        <!-- <div id="scoreC">Your Score : 0</div> -->
-        <div class="mario"></div>
-        <div class="obstacle obstacleani">
-            <!-- <img src="enemy1-removebg-preview.png" alt=""> -->
-            <!-- <img src="enemy2.png" alt="">
-            <img src="enemy3.png" alt="">
-            <img src="enemy4.png" alt=""> -->
+        <div id="second">
+            <H2>Projects</H2>
+            <a href="mario/index.html" target="_blank"><div class="elem elem1">
+                <img src="images/mario.png" alt="">
+                <h1>Mario Game</h1>
+                <i class="ri-gamepad-line"></i>
+            </div></a>
+            <a href="https://doctorappointment-b6y5.onrender.com/" target="_blank"><div class="elem elem2">
+                <img src="images/doctor.png" alt="">
+                <h1>Doctor Appointment</h1>
+                <i class="ri-stethoscope-line"></i>
+            </div></a>
+            <a href="Online course selling Project/Home.html" target="_blank"><div class="elem elemlast">
+                <img src="images/course.png" alt="">
+                <h1>Online Course</h1>
+                <i class="ri-graduation-cap-line"></i>
+            </div></a>
+        </div>
+        <div id="about">
+            <img src="images/Design 2.png" alt="">
+            <div id="txtabout">
+                <!-- <h5 class="me">(About Me)</h5> -->
+                <p>Hello!<br><br> I'm Harsh Vardhan, a passionate Software Engineer with a strong focus on Coding and Web Development. I spend my days (and often nights) bringing the digital world to life with lines of code and innovative projects, transforming zeros and ones into dynamic, interactive experiences.<br><br>When I'm not busy in coding or developing web experiences, you'll likely find me diving into video games, flexing my creativity through video and photo editing, or getting lost in music.</p>
+                <a href="mailto:harshvardhan96643@gmail.com">Let's Talk</a>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footerL">
+                <h5>Updated on </h5>
+                <h5>2024</h5>
+            </div>
+            <div id="footerR">
+                <a href="https://www.instagram.com/harsh__vardhan__.__/?igsh=bzNjYnVtYXZ4cnl6" target="_blank">InstaGram</a>
+                <a href="https://www.linkedin.com/in/harsh-vardhan03/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/HarshVardhanHV" target="_blank">Github</a>
+            </div>
         </div>
     </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+    <script src="home.js"></script>
 </body>
 </html>
