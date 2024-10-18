@@ -94,35 +94,29 @@ body{
     width: fit-content;
     height: fit-content;
     display: grid;
-    /* visibility: hidden; */
+    visibility: hidden;
     position: relative;
-    left: 19vw;
-    top: 20vh;
-    /* font-size: 7rem; */
+    left: 25vw;
+    top: 28vh;
+    font-size: 7rem;
     text-align: center;
     font-weight: bold;
     font-family: sans-serif;
     z-index: 1;
 }
 .gameover img{
-    width: 60vw;
+    width: 50vw;
 }
-
 
 .gameover button{
     font-size: 1.2rem;
     color: white;
     background-color: transparent;
-    margin-left: 19vw;
+    margin-left: 13.9vw;
     margin-top: -22vh;
     width: 22.3vw;
     height: 9vh;
     border-radius: 30px;
-}
-
-.gameover button img{
-    width: 22.3vw;
-    height: 9vh;
 }
 
 #scoreC{
@@ -151,22 +145,22 @@ body{
     }
 }
 
-/* @keyframes obstacleani{
+@keyframes obstacleani{
     0%{
         left: 100vw;
     }
     100%{
         left: -10vw;
     }
-} */
-/* @keyframes groundani{
+}
+@keyframes groundani{
     0%{
         left: 0;
     }
     100%{
         left: -100vw;
     }
-} */
+}
 @keyframes cloudani{
     0%{
         left: 0vw;
@@ -175,11 +169,11 @@ body{
         left: -100vw;
     }
 }
-/* @keyframes mountainani{
+@keyframes mountainani{
     0%{
         left: 0vw;
     }
     100%{
         left: -100vw;
     }
-} */
+}
