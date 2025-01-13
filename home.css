@@ -35,6 +35,7 @@ html,body{
 #main{
     width: 100%;
     background: black;
+    cursor: default;
 }
 
 #home{
@@ -70,7 +71,7 @@ html,body{
     width: 58px;
     height: 20px;
     cursor: pointer;
-    background-color: black;
+    /* background-color: black; */
     color: white;
     border: none;
     font-size: 15px;
@@ -85,10 +86,12 @@ html,body{
 
 .bounding .bound{
     transform: translateY(100%);
-
 }
 
 #heading{
+    /* background-color: #fff; */
+    cursor: default;
+    width: 100%;
     margin-top: 100px;
 }
 
@@ -179,7 +182,7 @@ html,body{
     color: white;
     /* padding-right: 10vw; */
     padding: 0 3vw;
-    padding-top: 130px;
+    padding-top: 100px;
     background-color: black;
     width: 100%;
     height: 100vh;
@@ -230,6 +233,7 @@ html,body{
 }
 
 .elem img{
+    border-radius: 5px;
     margin-top: -220px;
     margin-left: -260px;
     /* display: none; */
@@ -241,18 +245,32 @@ html,body{
     position: absolute;
 }
 
-#about{
-    /* margin-top: 100px; */
+#more a{
+    /* color: #bbbbbb; */
+    /* text-transform: uppercase; */
+    font-size: 20px;
+    font-weight: 500;
+    gap: 5px;
     display: flex;
+    margin-top: 5vh;
+    margin-left: 2vh;
     align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+    justify-content: center;
+}
+
+#about{
+    position: relative;
+    /* margin-top: 60px; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* gap: 50px; */
     width: 100%;
-    /* height: 100vh; */
+    height: 100vh;
     /* height: 100px; */
-    background-color: black;
-    padding: 10vw 5vw;
-    padding-left: 40vw;
+    /* background-color: rgb(208, 103, 103); */
+    /* padding: 0vh 6vw; */
+    /* padding-left: 40vw; */
     color: white;
 
 }
@@ -269,16 +287,26 @@ html,body{
     /* margin: -100px 0; */
     
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 25%;
+    /* height: 200px; */
 }
 
 #txtabout{
-    width: 80%;
+    /* margin-top: 120px; */
+    width: 95%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 26vh 0vw;
+    padding-left: 40vw;
+}
+
+#txtabout2{
+    justify-content: space-between;
 }
 
 #txtabout h5{
-    width: fit-content;
+    /* width: fit-content; */
     text-transform: uppercase;
     opacity: .6;
     margin-bottom: 10px;
@@ -317,12 +345,20 @@ html,body{
 } */
 
 #footer{
-    background-color: black;
-    color: white;
+    /* background-color: rgb(211, 147, 147); */
+    /* color: white; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    padding: 18px 30px;
+
+    /* padding: 0 3vw; */
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px 30px;
 }
 
 #footerL{
@@ -346,6 +382,7 @@ html,body{
 }
 
 #nav-items {
+    /* background-color: none; */
     margin-top: -30px;
     margin-right: 100px;
     display: none;
@@ -407,3 +444,119 @@ html,body{
     from {width: 0;}
     to {width: 103%;}
 } */
+
+@media screen and (max-width: 480px) {
+    #minicircle{
+        display: none;
+    }
+
+    #nav{
+        padding: 5.1vw;
+    }
+
+    #nav a {
+        font-size: 20px;
+    }
+
+    #nav h5{
+        font-size: 15px;
+    }
+
+    /* .bounding .bound{
+        transform: translateX(100%);
+    } */
+
+    #heading h1{
+        font-size: 13vw;
+        margin-left: 6vw;
+        margin-top: 4vh;
+    }
+
+    #heading #secondh1{
+        /* background-color: #945858; */
+        width: 100vw;
+        text-align: right;
+        margin-top: 10px;
+        margin-left: 0px;
+        padding-right: 6vw;
+    }
+
+    #homefooter{
+        bottom: 10%;
+    }
+
+    #second{
+        padding-top: 50px;
+    }
+
+    .elem{
+        justify-content: start;
+        gap: 60px;
+    }
+
+    .elem i{
+        display: none;
+    }
+
+    .elem img{
+        /* display: inline; */
+        margin: 10px;
+        margin-left: 0;
+        opacity: 1 !important;
+        position: static;
+        height: auto;
+        width: 40%;
+        border-radius: 50px;
+    }
+
+    #about{
+        height: 90vh;
+    }
+
+    #txtabout{
+        display: grid;
+        gap: 4vh;
+        padding: 0vh 0vw;
+        padding-left: 6vw;
+    }
+
+    #txtabout p{
+        line-height: 1.3;
+        font-size: smaller;
+    }
+
+    #about img{
+        width: 45%;
+        margin: 0 24vw;
+    }
+
+    #footer{
+        padding: 10px 45px;
+        flex-direction: column-reverse;
+    }
+
+    #footerL{
+        /* display: none; */
+        margin-top: 20px;
+        /* font-size: smaller; */
+        font-size: 10px;
+    }
+
+    /*menu*/
+    #nav-items {
+        /* width: 100%; */
+        margin-top: -30px;
+        margin-right: -10px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+        position: absolute;
+        top: 57px;
+        right: 30px;
+    }
+}
+
+
+
+/* skills */
