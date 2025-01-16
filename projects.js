@@ -95,6 +95,13 @@ function firstPageAni(){
             delay: -1.4,
             ease: Expo.easeInOut
         })
+        .from(".image-text", {
+            // x: '-500',
+            opacity: 0,
+            duration: 1,
+            delay: -0.1,
+            ease: Expo.easeInOut
+        })
     
         .from("#iconset", {
             y: '+60',

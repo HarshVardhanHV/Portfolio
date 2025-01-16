@@ -301,5 +301,17 @@ body::-webkit-scrollbar{
         /* height: 95vh; */
         /* background-color: #fff; */
         /* transform: translateX(-164%); */
+        opacity: 0.6 !important;
+    }
+
+    .image-text{
+        position: absolute;
+        /* transform: translate(-50%, -50%); */
+        color: white;
+        font-size: 1.1rem;
+        /* text-align: center; */
+        opacity: 1;
+        transition: 0.6s ease;
+        pointer-events: none;
     }
 }
