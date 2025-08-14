@@ -42,11 +42,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 document.querySelectorAll('#nav-items .scroll').forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();  // Prevent default behavior
-        const targetId = e.target.getAttribute('href').substring(1);  // Get the section ID
-        const targetSection = document.getElementById(targetId);  // Get the target section by ID
+        const targetId = e.target.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
         
         if (targetSection) {
-            // Scroll to the target section with smooth behavior
             window.scrollTo({
                 top: targetSection.offsetTop,
                 behavior: 'smooth'
